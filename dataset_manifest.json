@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "title": "Tibetan Abbreviations Public Dataset",
+  "title_zh": "藏文缩写词公开数据集",
+  "version": "1.0.0",
+  "publication_date": "2026-10-28",
+  "resource_type": "Dataset",
+  "language": "bo",
+  "repository": "https://github.com/rindon520/tibetan-abbreviations-public-dataset",
+  "description_zh": "用于藏文缩写词还原与识别研究的文本对照语料与字符清单。",
+  "sources": [
+    {
+      "title": "藏文缩略语词典",
+      "author": "谢拉",
+      "publisher": "民族出版社",
+      "role": "数据整理来源"
+    },
+    {
+      "title": "缩略语词典",
+      "author": "项布旺杰",
+      "publisher": "四川民族出版社",
+      "role": "参考来源"
+    }
+  ],
+  "license": null,
+  "pairing": "Source.txt line n corresponds to Restore.txt line n; preserve original order.",
+  "preservation": "All three TXT files preserve the exact bytes in the author-provided archive; no normalization, deduplication or reordering.",
+  "source_archive": {
+    "name": "Tibetan Abbreviations Public Dataset.zip",
+    "bytes": 411832,
+    "sha256": "18e77950851745f52e9d579f15402a51392a4609a2751a16afe49c27ab8806a2"
+  },
+  "files": [
+    {
+      "path": "data/Restore.txt",
+      "role": "restored_reference_text",
+      "format": "text/plain",
+      "encoding": "UTF-8",
+      "utf8_bom": true,
+      "line_endings": "CRLF",
+      "terminal_newline": false,
+      "records": 10820,
+      "blank_records": 0,
+      "bytes": 1012080,
+      "sha256": "4a168f52013f596fc35df3c416c560457377d1a27f1ee4d400324e9798a91d90"
+    },
+    {
+      "path": "data/Source.txt",
+      "role": "abbreviated_text",
+      "format": "text/plain",
+      "encoding": "UTF-8",
+      "utf8_bom": true,
+      "line_endings": "CRLF",
+      "terminal_newline": false,
+      "records": 10820,
+      "blank_records": 0,
+      "bytes": 814658,
+      "sha256": "1bff6b35dec9ccebdfad0c1fe6a0e1f543b359746bf890178c517144be9b6a13"
+    },
+    {
+      "path": "data/tibetan_VCC_7387.txt",
+      "role": "tibetan_character_and_combining_form_inventory",
+      "format": "text/plain",
+      "encoding": "UTF-8",
+      "utf8_bom": false,
+      "line_endings": "CRLF",
+      "terminal_newline": false,
+      "records": 7387,
+      "blank_records": 0,
+      "bytes": 91741,
+      "sha256": "2ccd65a16e3fb659beaba5ad4912edd13f6684c92aea5ad8238e759641c27cbd",
+      "distinct_entries": 7199,
+      "distinct_unicode_codepoints": 205
+    }
+  ]
+}
